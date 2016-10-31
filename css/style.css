@@ -104,14 +104,38 @@ body {
 }
 .features {
 	width: 100%;
-	min-height: 255px;
+	min-height: 256px;
 	background-color: #81b3d2;
 }
+.features-list-icon {
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.features-icon {
+	text-align: center;
+    width: 22%;
+    min-height: 60px;
+    display: inline-block;
+    margin-right: 72px;
+}
+.features-icon:nth-child(3) {
+	margin-right: 30px;
+}
+.features-icon:first-child {
+	margin-left: 123px;
+}
 .feature-1 img {
-	float: right;;
+	float: right;
+}
+.feature-2 {
+	float: left;
 }
 .feature-container_left {
 	float: left;
+}
+.feature-container_right {
+	float: right;
 }
 .content-center {
 	
