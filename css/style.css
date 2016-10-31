@@ -1,43 +1,159 @@
 /** Стили для разметки **/
-.main-header {
+body {
+	min-width: 1280px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	color: #ffffff;
+    text-transform: uppercase;
 
+    background: #fff url("../img/grey-back.png") repeat center top;
 }
 
 .container {
+   width: 1200px;
 
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -15px;
+
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   background-color: #fff;
 }
 
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+/** Стили для хедера **/
+.main-header {
+  width: 1200px;
+  min-height: 50px;
+  background-color: yellow;
+
+  margin-bottom: -21px;
+}
+
+.main-navigation {
+	position: relative;
+	width: 40%;
+}
+.main-navigation ul {
+	display: inline-block;
+}
+.main-navigation li {
+	list-style: none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.logo {
+	width: 138px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/** Стили для основного контента **/
+.main-title-pic {
+	width: 1200px;
+	min-height: 773px;
+	background: url(../img/main-pic-sedona.jpg) no-repeat center;
+}
+
+.sedona-title-line {
+	display: block;
+    background: url(../img/sedona.png) no-repeat center;
+    width: 458px;
+    height: 78px;
+    position: absolute;
+    top: 325px;
+    left: 427px;
+}
+.main-title-shape {
+	background: url(../img/shape.png) no-repeat center;
+	width: 100%;
+	height: 57px;
+
+	position: relative;
+    top: 520px;
+}
+
+.about {
+	width: 100%;
+	min-height: 200px;
+	background-color: #fff;
+
+	position: relative;
+	margin-top: -210px;
+}
+
+.about .page-title_default {
+	width: 450px;
+	position: absolute;
+	margin-top: 44px;
+	margin-left: 373px;
+}
+.about .page-description_default {
+	position: relative;
+	top: 130px;
+}
+.features {
+	width: 100%;
+	min-height: 255px;
+	background-color: #81b3d2;
+}
+.feature-1 img {
+	float: right;;
+}
+.feature-container_left {
+	float: left;
+}
+.content-center {
+	
+}
 /** Стили для оформления текста **/
-h1, h2, h3 {
-
-}
-
-p {
-
-}
-
-.main-title {
-
+h1, h2, h3, p {
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .page-title_default {
-
+	font-size: 21px;
+	line-height: 26px;
+	color: #000;
 }
 
 .page-title_special {
-
+	font-size: 21px;
+	line-height: 21px;
+	color: #fff;
+	width: 200px;
 }
 
 .page-title_increased {
-
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #000;
 }
 
 .page-description_default {
-
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	font-weight: lighter;
 }
 
 .page-description_special {
-
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+	font-weight: lighter;
 }
 
 /** Стили для кнопок **/

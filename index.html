@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-    	<div class="container">
+    <div class="container">
+      <header class="main-header clearfix">
         <nav class="main-navigation">
-          <ul>
+          <ul class="left">
             <li>
               <a href="#">ИНФОРМАЦИЯ</a>
             </li>
             <li>
               <a href="#">ФОТО И ВИДЕО</a>
             </li>
-            <span class="logo"></span>
+          </ul>
+          
+          <ul class="right">
             <li>
               <a href="#">КАРТА ШТАТА</a>
             </li>
@@ -25,43 +27,48 @@
               <a href="#">ГОСТИНИЦЫ</a>
             </li>
           </ul>
+          <div class="logo">
+            <img src="img/logo.png" alt="logo" width="138" height="70">
+          </div>
         </nav>
-      </div>  
-    </header>
-    <main>
-      <div class="container">
-        <img src="#" alt="">
-        <h1 class="main-title">SEDONA</h1>
-        <div class="about">
+      </header>
+      <main>
+        <div class="main-title-pic">
+          <div class="sedona-title-line"></div>
+          <div class="main-title-shape"></div>
+        </div>
+        <div class="about clearfix">
           <h3 class="page-title_default">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h3>
           <p class="page-description_default">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-        <div class="feature-1">
-          <img src="">
+        <div class="features feature-1">
+          <img src="img/feature-1-pic.jpg">
           <div class="feature-container_left">
+            <div class="content-center">
             <h3 class="page-title_special">НАСТОЯЩИЙ ГОРОДОК</h3>
             <span class="feature-number">№ 1</span>
             <p class="page-description_special">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
           </div>
         </div>
         <div class="features-list-icon">
           <div class="features-icon">
             <img src="">
-            <h3 class="page-title">ЖИЛЬЕ</h3>
-            <p class="page-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="page-title_default">ЖИЛЬЕ</h3>
+            <p class="page-description_default">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features-icon">
             <img src="">
-            <h3 class="page-title">ЕДА</h3>
-            <p class="page-description">всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            <h3 class="page-title_default">ЕДА</h3>
+            <p class="page-description_default">всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </div>
           <div class="features-icon">
             <img src="">
-            <h3 class="page-title">СУВЕНИРЫ</h3>
-            <p class="page-description">Не только китайского, но и местного производства!</p>
+            <h3 class="page-title_default">СУВЕНИРЫ</h3>
+            <p class="page-description_default">Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="feature-2">
+        <div class="features feature-2">
           <img src="">
           <div class="feature-container_right">
             <h3 class="page-title_special">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
@@ -71,24 +78,24 @@
         </div>
         <div class="features-list-icon">
           <div class="features-icon">
-            <h3 class="page-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3 class="page-title_defaulte">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <span class="feature-number">№ 3</span>
-            <p class="page-description">ВСЕ достопримеча-тельности находятся очень близко</p>
+            <p class="page-description_default">ВСЕ достопримечательности находятся очень близко</p>
           </div>
           <div class="features-icon">
-            <h3 class="page-title">КРАСИВАЯ ДОРОГА</h3>
+            <h3 class="page-title_default">КРАСИВАЯ ДОРОГА</h3>
             <span class="feature-number">№ 4</span>
-            <p class="page-description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            <p class="page-description_default">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </div>
           <div class="features-icon">
-            <h3 class="page-title">МАЛО ТУРИСТОВ</h3>
+            <h3 class="page-title_default">МАЛО ТУРИСТОВ</h3>
             <span class="feature-number">№ 5</span>
-            <p class="page-description">Большинство едет в гранд каньон и толпится там</p>
+            <p class="page-description_default">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
         <div class="about">
           <p class="page-title_increased">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-          <p class="page-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+          <p class="page-description_default">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
         </div>
         <div class="order-form">
@@ -104,24 +111,25 @@
             <input type="number" name="child-number" id="child-number" min="1" step="1" max="10" value="2">
           <button type="submit" class="btn_search">НАЙТИ</button>
         </div>
+        </form>
         <div class="map">
           <img src="">
         </div>
-      </div>
-    </main>
-    <footer class="main-footer">
-      <div class="container clearfix" id="contacts">
-        <span class="hashtag">#visitsedona</span>
-        <section class="footer-social">
-          <a class="btn_social btn_social-tw" href="#">twitter</a>
-          <a class="btn_social btn_social-fb" href="#">Фейсбук</a>
-          <a class="btn_social btn_social-you" href="#">youtube</a>
-        </section>
-        <section class="footer-copyright">
-          <p>WEBSITE BY:</p>
-          <a href="https://htmlacademy.ru"><img src="" alt=""></a>
-        </section>
-      </div>
-    </footer>
+      </main>
+      <footer class="main-footer">
+        <div class="clearfix" id="contacts">
+          <span class="hashtag">#visitsedona</span>
+          <section class="footer-social">
+            <a class="btn_social btn_social-tw" href="#">twitter</a>
+            <a class="btn_social btn_social-fb" href="#">Фейсбук</a>
+            <a class="btn_social btn_social-you" href="#">youtube</a>
+           </section>
+          <section class="footer-copyright">
+            <p>WEBSITE BY:</p>
+            <a href="https://htmlacademy.ru"><img src="" alt=""></a>
+          </section>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
