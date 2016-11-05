@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-    	<div class="container">
+    <div class="container">
+      <header class="main-header clearfix">
         <nav class="main-navigation">
-          <ul>
+          <ul class="left">
             <li>
               <a href="#">ИНФОРМАЦИЯ</a>
             </li>
             <li>
               <a href="#">ФОТО И ВИДЕО</a>
             </li>
-            <span class="logo"></span>
+          </ul>
+          
+          <ul class="right">
             <li>
               <a href="#">КАРТА ШТАТА</a>
             </li>
@@ -25,11 +28,16 @@
               <a href="#">ГОСТИНИЦЫ</a>
             </li>
           </ul>
+          <div class="logo">
+            <img src="img/logo.png" alt="logo" width="138" height="70">
+          </div>
         </nav>
-      </div>  
-    </header>
+      </header>
     <main>
+      
       <div class="container">
+      <div class="filter-background">
+      </div>
         <div class="main-hotels-pic">
           <img src="" alt="">
         </div>
@@ -115,20 +123,19 @@
           <span class="rating-name">ЕЙТИНГ: 9,2</span>
         </div>
       </div>
-    </main>
-    <footer class="main-footer">
-      <div class="container clearfix" id="contacts">
-        <span class="hashtag">#visitsedona</span>
-        <section class="footer-social">
-          <a class="btn_social btn_social-tw" href="#">twitter</a>
-          <a class="btn_social btn_social-fb" href="#">Фейсбук</a>
-          <a class="btn_social btn_social-you" href="#">youtube</a>
-        </section>
-        <section class="footer-copyright">
-          <p>WEBSITE BY:</p>
-          <a href="https://htmlacademy.ru"><img src="" alt=""></a>
-        </section>
-      </div>
-    </footer>
-  </body>
-</html>
+        <div class="main-footer">
+          <div class="clearfix" id="contacts">
+            <span class="hashtag">#visitsedona</span>
+            <section class="footer-social">
+              <a class="btn_social btn_social-tw" href="#">twitter</a>
+              <a class="btn_social btn_social-fb" href="#">Фейсбук</a>
+              <a class="btn_social btn_social-you" href="#">youtube</a>
+             </section>
+            <section class="footer-copyright">
+              <p>WEBSITE BY</p>
+              <a href="https://htmlacademy.ru"><img src="img/html-academy.png" alt="html-academy.png"></a>
+            </section>
+          </div>
+        </div>
+      </body>
+    </html>
