@@ -72,7 +72,9 @@ body {
 	min-height: 773px;
 	background: url(../img/main-pic-sedona.jpg) no-repeat center;
 }
-
+.filter-background {
+    background: url(../img/filter-background.png) no-repeat center;
+}
 .sedona-title-line {
 	display: block;
     background: url(../img/sedona.png) center;
@@ -176,15 +178,31 @@ body {
 .pre-form {
 	width: 100%;
     margin-top: -30px;
-    height: 245px;
+    height: 290px;
     box-sizing: border-box;
     color: #fff;
     position: relative;
     padding-top: 61px;
 }
+.order-form {
+    position: absolute;
+    z-index: 10;
+    margin-top: -73px;
+    left: 356px;
+    width: 550px;
+    height: 466px;
+    background-color: #fff;
+}
+.map {
+    height: 100%;
+    position: relative;
+}
 .main-footer {
-	height: 155px;
-	width: 100%;
+    height: 125px;
+    width: 1200px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.82);
+    margin-top: -126px;
 }
 .hashtag {
 	color: #000;
@@ -202,6 +220,10 @@ body {
 	float: left;
 	width: 180px;
 	text-align: center;
+
+    position: relative;
+    left: 250px;
+    top: 40px;
 }
 .btn_social {
 	display: inline-block;
@@ -211,6 +233,30 @@ body {
 	font-size: 0;
 	vertical-align: top;
 	text-decoration: none;
+}
+.btn_social-tw {
+    background: url(../img/twitter.png) no-repeat; 
+}
+.btn_social-fb {
+   background: url(../img/facebook.png) no-repeat; 
+}
+.btn_social-you {
+   background: url(../img/youtube.png) no-repeat; 
+}
+.footer-copyright {
+    width: 100px;
+    float: right;
+    position: relative;
+    color: #000;
+}
+.footer-copyright p {
+    position: relative;
+    top: 42px;
+    left: -242px;
+}
+.footer-copyright img {
+    position: relative;
+    right: 150px;
 }
 /** Стили для оформления текста **/
 h1, h2, h3, p {
@@ -293,63 +339,40 @@ h1, h2, h3, p {
 
 }
 
-.feature-number::before {
-    content: "";
-    position: absolute;
-    bottom: 92px;
-    left: 28.5%;
-
-    display: block;
-    width: 20px;
-    height: 3px;
-    margin-left: -14px;
-    background-color: #ffffff;
-}
-.feature-number::after {
-     content: "";
-    position: absolute;
-    bottom: 93px;
-    left: 32%;
-    display: block;
-    width: 20px;
-    height: 3px;
-    margin-left: -10px;
-    background-color: #ffffff;
-}
 .feature-line_default__left {
     display: block;
-    width: 20px;
-    height: 3px;
+    width: 10px;
+    height: 2px;
     position: relative;
     background-color: #ffffff;
     top: 10px;
-    left: 150px;
+    left: 160px;
 
 }
 .feature-line_default__right {
 	display: block;
-    width: 20px;
-    height: 3px;
+    width: 10px;
+    height: 2px;
     background-color: #ffffff;
     position: relative;
-    left: 215px;
-    top: -11px;
+    left: 216px;
+    top: -10px;
 }
 .feature-line_special__left {
 	display: block;
-    width: 20px;
+    width: 10px;
     height: 2px;
     background-color: #000;
     position: relative;
     top: 10px;
-    left: 87px;
+    left: 103px;
 }
 .feature-line_special__right {
 	display: block;
-    width: 20px;
+    width: 10px;
     height: 2px;
     background-color: #000;
     position: relative;
     top: -10px;
-    left: 159px;
+    left: 151px;
 }
