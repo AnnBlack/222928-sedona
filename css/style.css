@@ -1,43 +1,255 @@
 /** Стили для разметки **/
-.main-header {
+body {
+	min-width: 1280px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	color: #ffffff;
+    text-transform: uppercase;
 
+    background: #fff url("../img/grey-back.png") repeat center top;
 }
 
 .container {
+   width: 1200px;
 
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -15px;
+
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   background-color: #fff;
 }
 
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+/** Стили для хедера **/
+.main-header {
+  width: 1200px;
+  height: 64px;
+  background-color: #fff;
+
+  margin-bottom: 0px;
+}
+
+.main-navigation {
+	position: relative;
+}
+
+.main-navigation li {
+	list-style: none;
+	display: inline;
+	
+}
+.main-navigation a {
+	text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-right: 114px;
+    margin-left: 34px;
+}
+.left {
+	float: left;
+	margin-top: 30px;
+}
+.right {
+	float: right;
+	margin-top: 30px;
+}
+
+.logo {
+	width: 138px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/** Стили для основного контента **/
+.main-title-pic {
+	width: 1200px;
+	min-height: 773px;
+	background: url(../img/main-pic-sedona.jpg) no-repeat center;
+}
+
+.sedona-title-line {
+	display: block;
+    background: url(../img/sedona.png) center;
+    width: 458px;
+    height: 78px;
+    position: absolute;
+    top: 325px;
+    left: 427px;
+}
+.main-title-shape {
+	background: url(../img/shape.png) no-repeat center;
+	width: 100%;
+	height: 57px;
+
+	position: relative;
+    top: 520px;
+}
+
+.about {
+	width: 100%;
+	min-height: 200px;
+	background-color: #fff;
+
+	position: relative;
+	margin-top: -210px;
+}
+
+.about .page-title_default {
+	width: 450px;
+	position: absolute;
+	margin-top: 44px;
+	margin-left: 373px;
+}
+.about .page-description_default {
+	position: relative;
+	top: 130px;
+}
+.features {
+	width: 100%;
+	height: 256px;
+	background-color: #81b3d2;
+}
+.features-list-icon {
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.features-icon {
+	text-align: center;
+    width: 22%;
+    min-height: 60px;
+    display: inline-block;
+    margin-right: 72px;
+
+    color: #000;
+}
+.features-icon:nth-child(3) {
+	margin-right: 30px;
+}
+.features-icon:first-child {
+	margin-left: 123px;
+}
+.feature-1 img {
+	float: right;
+}
+.feature-2 {
+	float: left;
+}
+.feature-container_left {
+	float: left;
+}
+.feature-container_right {
+	float: right;
+}
+.feature-number_special {
+	color: #000;
+}
+.content-center {
+	text-align: center;
+    margin-top: 54px;
+}
+.content-center h3 {
+	width: 176px;
+    margin-left: 107px;
+    line-height: 1.3em;
+}
+.content-center p {
+	text-align: center;
+    width: 273px;
+    margin-left: 63px;
+    margin-right: 50px;
+}
+.background {
+	display: inline-block;
+	background-image: url('../img/grey-back.png');
+    padding-top: 32px;
+    height: 210px;
+	width: 100%;
+    height: 240px;
+}
+.pre-form {
+	width: 100%;
+    margin-top: -30px;
+    height: 245px;
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    padding-top: 61px;
+}
+.main-footer {
+	height: 155px;
+	width: 100%;
+}
+.hashtag {
+	color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+
+    display: block;
+    float: left;
+
+    margin-left: 128px;
+    margin-top: 50px;
+}
+.footer-social {
+	float: left;
+	width: 180px;
+	text-align: center;
+}
+.btn_social {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+}
 /** Стили для оформления текста **/
-h1, h2, h3 {
-
-}
-
-p {
-
-}
-
-.main-title {
-
+h1, h2, h3, p {
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .page-title_default {
-
+	font-size: 21px;
+	line-height: 26px;
+	color: #000;
 }
 
 .page-title_special {
-
+	font-size: 21px;
+	line-height: 21px;
+	color: #fff;
+	width: 200px;
 }
 
 .page-title_increased {
-
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #000;
 }
 
 .page-description_default {
-
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	font-weight: lighter;
 }
 
 .page-description_special {
-
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+	font-weight: lighter;
 }
 
 /** Стили для кнопок **/
@@ -81,3 +293,63 @@ p {
 
 }
 
+.feature-number::before {
+    content: "";
+    position: absolute;
+    bottom: 92px;
+    left: 28.5%;
+
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-left: -14px;
+    background-color: #ffffff;
+}
+.feature-number::after {
+     content: "";
+    position: absolute;
+    bottom: 93px;
+    left: 32%;
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-left: -10px;
+    background-color: #ffffff;
+}
+.feature-line_default__left {
+    display: block;
+    width: 20px;
+    height: 3px;
+    position: relative;
+    background-color: #ffffff;
+    top: 10px;
+    left: 150px;
+
+}
+.feature-line_default__right {
+	display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    position: relative;
+    left: 215px;
+    top: -11px;
+}
+.feature-line_special__left {
+	display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: 10px;
+    left: 87px;
+}
+.feature-line_special__right {
+	display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: -10px;
+    left: 159px;
+}
