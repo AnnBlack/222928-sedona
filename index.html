@@ -19,7 +19,7 @@
               <a href="#">ФОТО И ВИДЕО</a>
             </li>
           </ul>
-          
+
           <ul class="right">
             <li>
               <a href="#">КАРТА ШТАТА</a>
@@ -43,7 +43,7 @@
           <p class="page-description_default">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <div class="features feature-1">
-          <img src="img/feature-1-pic.jpg">
+          <img src="img/feature-1-pic.jpg" alt="feature-icon">
           <div class="feature-container_left">
             <div class="content-center">
             <h3 class="page-title_special">НАСТОЯЩИЙ ГОРОДОК</h3>
@@ -54,17 +54,17 @@
         </div>
         <div class="features-list-icon">
           <div class="features-icon">
-            <img src="img/feature-icon-1.png">
+            <img src="img/feature-icon-1.png" alt="feature-icon">
             <h3 class="page-title_default">ЖИЛЬЕ</h3>
             <p class="page-description_default">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features-icon">
-            <img src="img/feature-icon-2.png">
+            <img src="img/feature-icon-2.png" alt="feature-icon">
             <h3 class="page-title_default">ЕДА</h3>
             <p class="page-description_default">всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </div>
           <div class="features-icon">
-            <img src="img/feature-icon-3.png">
+            <img src="img/feature-icon-3.png" alt="feature-icon">
             <h3 class="page-title_default">СУВЕНИРЫ</h3>
             <p class="page-description_default">Не только китайского, но и местного производства!</p>
           </div>
@@ -102,33 +102,35 @@
           </p>
         </div>
         <div class="order-form">
-          <h2 class="page-title_special">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ<span class="order-header"></span></h2>
+          <div class="order-header">
+            <h2 class="order-form-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          </div>
           <form action="#" method="post">
-          <label for="date-in">ДАТА ВЪЕЗДА</label>
-            <input type="date" name="date-in" id="date-in" value=""><span class="calendar-img"></span>
-          <label for="date-out">ДАТА ВЫЕЗДА</label>
-            <input type="date" name="date-out" id="date-out" value=""><span class="calendar-img"></span>
-          <label for="adult-number">ВЗРОСЛЫЕ</label>
-            <input type="number" name="adult-number" id="child-number" min="1" step="1" max="10" value="2">
-          <label for="child-number">ДЕТИ</label>
-            <input type="number" name="child-number" id="child-number" min="1" step="1" max="10" value="2">
+          <label for="date-in" class="form__name">ДАТА ВЪЕЗДА:</label>
+            <input name="date-in" class="form__name_default" id="date-in"><span class="placeholder__date">24 апреля 2016</span><span class="calendar-img"></span>
+          <label for="date-out" class="form__name">ДАТА ВЫЕЗДА:</label>
+            <input name="date-out" id="date-out" class="form__name_default"><span class="placeholder__date">4 июля 2016</span><span class="calendar-img"></span>
+          <label for="adult-number" class="form__name">ВЗРОСЛЫЕ</label>
+            <input name="adult-number" id="child-number" class="form__name_small" min="1" step="1" max="10" value="2">
+          <label for="child-number" class="form__name-1">ДЕТИ</label>
+            <input name="child-number" id="child-number" class="form__name_small-1" min="1" step="1" max="10" value="2">
           <button type="submit" class="btn_search">НАЙТИ</button>
         </div>
         </form>
         <div class="map">
-          <img src="img/map.jpg">
+          <img src="img/map.jpg" alt="map">
         </div>
         <div class="main-footer">
           <div class="clearfix" id="contacts">
             <span class="hashtag">#visitsedona</span>
             <section class="footer-social">
-              <a class="btn_social btn_social-tw" href="#">twitter</a>
-              <a class="btn_social btn_social-fb" href="#">Фейсбук</a>
-              <a class="btn_social btn_social-you" href="#">youtube</a>
+              <a class="btn_social" href="#"><img class="btn_social-tw" src="img/twitter.png" alt="twitter">twitter</a>
+              <a class="btn_social" href="#"><img class="btn_social-fb" src="img/facebook.png" alt="facebook">Фейсбук</a>
+              <a class="btn_social" href="#"><img class="btn_social-you" src="img/youtube.png" alt="youtube">youtube</a>
              </section>
             <section class="footer-copyright">
               <p>WEBSITE BY</p>
-              <a href="https://htmlacademy.ru"><img src="img/html-academy.png" alt="html-academy.png"></a>
+              <div class="footer-copyright-link"><a href="https://htmlacademy.ru">html-academy</a></div>
             </section>
           </div>
         </div>

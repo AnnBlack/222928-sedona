@@ -25,6 +25,9 @@ body {
   display: table;
   clear: both;
 }
+
+
+
 /** Стили для хедера **/
 .main-header {
   width: 1200px;
@@ -41,7 +44,7 @@ body {
 .main-navigation li {
 	list-style: none;
 	display: inline;
-	
+
 }
 .main-navigation a {
 	text-decoration: none;
@@ -49,6 +52,21 @@ body {
     font-weight: bold;
     margin-right: 114px;
     margin-left: 34px;
+}
+.main-navigation a:link {
+	color: #000;
+}
+.main-navigation a:visited {
+	color: #604e43;
+}
+.main-navigation a:hover {
+	color: #9ac2db;
+}
+.main-navigation a:focus {
+	color: #b2b2b2;
+}
+.main-navigation a:active {
+	color: #766357;
 }
 .left {
 	float: left;
@@ -82,7 +100,7 @@ body {
     height: 78px;
     position: absolute;
     top: 325px;
-    left: 427px;
+    left: 606px;
 }
 .main-title-shape {
 	background: url(../img/shape.png) no-repeat center;
@@ -171,14 +189,21 @@ body {
 	display: inline-block;
 	background-image: url('../img/grey-back.png');
     padding-top: 32px;
-    height: 210px;
 	width: 100%;
     height: 240px;
 }
+.map {
+    height: 100%;
+    position: relative;
+}
+
+
+
+/** Стили для форм **/
 .pre-form {
 	width: 100%;
     margin-top: -30px;
-    height: 290px;
+    height: 335px;
     box-sizing: border-box;
     color: #fff;
     position: relative;
@@ -187,16 +212,33 @@ body {
 .order-form {
     position: absolute;
     z-index: 10;
-    margin-top: -73px;
-    left: 356px;
+    margin-top: -100px;
+    left: 555px;
     width: 550px;
     height: 466px;
     background-color: #fff;
+
+	-webkit-box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
+box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 }
-.map {
-    height: 100%;
-    position: relative;
+.order-header {
+	display:block;
+	width:550px;
+	height:80px;
+	background-color: #766357;
 }
+.order-form-title {
+	font-size: 23px;
+	line-height: 21px;
+	color: #fff;
+	width: 550px;
+	position: relative;
+	top: 28px;
+
+}
+
+/** Стилия для футера **/
 .main-footer {
     height: 125px;
     width: 1200px;
@@ -229,19 +271,29 @@ body {
 	display: inline-block;
 	width: 43px;
 	height: 43px;
-
+	background-color: #81b3d2;
 	font-size: 0;
 	vertical-align: top;
 	text-decoration: none;
 }
 .btn_social-tw {
-    background: url(../img/twitter.png) no-repeat; 
+	position: relative;
+	top: 13px;
 }
 .btn_social-fb {
-   background: url(../img/facebook.png) no-repeat; 
+	position: relative;
+	top: 10px;
 }
 .btn_social-you {
-   background: url(../img/youtube.png) no-repeat; 
+	position: relative;
+	top: 13px;
+}
+.btn_social:hover {
+	background-color: #669ec0;
+}
+.btn_social:active {
+	background-color: #5496bd;
+	opacity: 0.8;
 }
 .footer-copyright {
     width: 100px;
@@ -254,10 +306,30 @@ body {
     top: 42px;
     left: -242px;
 }
-.footer-copyright img {
-    position: relative;
-    right: 150px;
+.footer-copyright-link {
+   font-size:0;
+   background: url("../img/sprite.png") 0 -78px;
+   width: 113px;
+   height: 39px;
+   position: relative;
+   right: 145px;
 }
+.footer-copyright-link:hover {
+	background: url("../img/sprite.png") 0 0;
+	width: 113px;
+	height: 39px;
+	position: relative;
+    right: 145px;
+}
+
+.footer-copyright-link:active {
+	background: url("../img/sprite.png") 0 -39px;
+	width: 113px;
+	height: 39px;
+}
+
+
+
 /** Стили для оформления текста **/
 h1, h2, h3, p {
 	text-transform: uppercase;
@@ -292,19 +364,38 @@ h1, h2, h3, p {
 }
 
 .page-description_special {
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 21px;
 	color: #fff;
 	font-weight: lighter;
 }
 
+
+
 /** Стили для кнопок **/
 .btn_search {
+	width:415px;
+	height:50px;
+
+	background-color: #81b3d2;
+	color:#fff;
+	font-weight:bold;
+	font-size:21px;
+	border: none;
+	position: relative;
+	right: 37px;
+  top: 26px;
 
 }
+.btn_search:hover {
+	background-color: #669ec0;
+}
+.btn_search:active {
+	background-color:#5496bd;
+	color: #88b6d1;
+}
 
-.btn_social {
-
+.btn-social {
 }
 
 .btn_social-tw {
@@ -320,7 +411,17 @@ h1, h2, h3, p {
 }
 
 .btn_form {
+	width: 60px;
+	height:30px;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	color: #fff;
+	font-size:14px;
 
+}
+.btn_form:hover {
+	color:#000;
+	background-color:#fff;
 }
 
 .btn_default {
@@ -338,7 +439,79 @@ h1, h2, h3, p {
 .form-sorting__btn_checked {
 
 }
+.form__name {
+	display: block;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;
+	left: 53px;
+	margin-top: 8px;
+	top: 35px;
+}
+.form__name_default {
+	display: inline-block;
+	width: 330px;
+	height: 34px;
+	background-color: #f2f2f2;
+	border: none;
+	position: relative;
+	top: 7px;
+	left: 170px;
+}
+.form__name_small {
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	background-color: #f2f2f2;
+	border: none;
+	position: relative;
+  left: 169px;
+	top: 5px;
+}
+.form__name-1 {
+	display: block;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;
+	left: 333px;
+	top: -20px;
 
+}
+.form__name_small-1 {
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	background-color: #f2f2f2;
+	border: none;
+	position: relative;
+	left: 400px;
+	top: -56px;
+}
+.calendar-img {
+	width: 23px;
+	height: 22px;
+	background: url(../img/calendar-icon.png) no-repeat;
+	display: block;
+	position: relative;
+	top: -21px;
+	left: 471px;
+}
+.placeholder__date {
+	text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  color: #000;
+	top: 6px;
+  left: -144px;
+}
+
+
+/** Стили для декоративных элементов **/
 .feature-line_default__left {
     display: block;
     width: 10px;
