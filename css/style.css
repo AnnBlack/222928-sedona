@@ -3,6 +3,7 @@ body {
 	min-width: 1280px;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	color: #ffffff;
+	font-weight: bold;
     text-transform: uppercase;
 
     background: #fff url("../img/grey-back.png") repeat center top;
@@ -70,11 +71,11 @@ body {
 }
 .left {
 	float: left;
-	margin-top: 30px;
+	margin-top: 29px;
 }
 .right {
 	float: right;
-	margin-top: 30px;
+	margin-top: 29px;
 }
 
 .logo {
@@ -91,11 +92,13 @@ body {
 	background: url(../img/main-pic-sedona.jpg) no-repeat center;
 }
 .filter-background {
-    background: url(../img/filter-background.png) no-repeat center;
+  background: url(../img/filter-background.png) no-repeat;
+	width: 1200px;
+	height: 300px;
 }
 .sedona-title-line {
 	display: block;
-    background: url(../img/sedona.png) center;
+    background: url(../img/Sedona.png) center;
     width: 458px;
     height: 78px;
     position: absolute;
@@ -237,7 +240,96 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	top: 28px;
 
 }
+.form-sorting__btn {
 
+}
+
+.form-sorting__btn_checked {
+
+}
+.form__name {
+	display: block;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;
+	left: 53px;
+	margin-top: 8px;
+	top: 35px;
+}
+.form__name_default {
+	display: inline-block;
+	width: 330px;
+	height: 34px;
+	background-color: #f2f2f2;
+	border: none;
+	position: relative;
+	top: 7px;
+	left: 170px;
+}
+.form__name_small {
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	background-color: #f2f2f2;
+	border: none;
+	position: relative;
+  left: 169px;
+	top: 5px;
+}
+.form__name-1 {
+	display: block;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;
+	left: 333px;
+	top: -20px;
+}
+.form__name_small-1 {
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	background-color: #f2f2f2;
+	border: none;
+	position: relative;
+	left: 400px;
+	top: -56px;
+}
+.calendar-img {
+	width: 23px;
+	height: 22px;
+	background: url(../img/calendar-icon.png) no-repeat;
+	display: block;
+	position: relative;
+	top: -21px;
+	left: 471px;
+}
+.placeholder__date {
+	text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  color: #000;
+	top: 6px;
+  left: -144px;
+}
+.plus {
+
+}
+.minus {
+	width: 10px;
+	height: 3px;
+	color: #a9a9a9;
+}
+.hotel-form {
+	position: relative;
+	width: 900px;
+	height: 300px;
+	top: -328px;
+}
 /** Стилия для футера **/
 .main-footer {
     height: 125px;
@@ -395,29 +487,16 @@ h1, h2, h3, p {
 	color: #88b6d1;
 }
 
-.btn-social {
-}
-
-.btn_social-tw {
-
-}
-
-.btn_social-fb {
-
-}
-
-.btn_social-you {
-
-}
-
 .btn_form {
-	width: 60px;
-	height:30px;
+	display: inline-block;
+	width: 125px;
 	border: 2px solid #fff;
 	border-radius: 2px;
 	color: #fff;
-	font-size:14px;
-
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	padding: +6px;
 }
 .btn_form:hover {
 	color:#000;
@@ -425,91 +504,39 @@ h1, h2, h3, p {
 }
 
 .btn_default {
-
+	display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  width: 109px;
+  text-align: center;
+  background-color: #669ec0;
+  height: 20px;
+  padding: 8px;
 }
-
+.btn_default:hover {
+	background-color: #5496bd;
+}
+.btn_default:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
 .btn_special {
-
-}
-
-.form-sorting__btn {
-
-}
-
-.form-sorting__btn_checked {
-
-}
-.form__name {
-	display: block;
-	color: #000;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 15px;
-	position: relative;
-	left: 53px;
-	margin-top: 8px;
-	top: 35px;
-}
-.form__name_default {
 	display: inline-block;
-	width: 330px;
-	height: 34px;
-	background-color: #f2f2f2;
-	border: none;
-	position: relative;
-	top: 7px;
-	left: 170px;
+  text-decoration: none;
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  background-color: #766357;
+  height: 20px;
+  padding: 8px;
 }
-.form__name_small {
-	display: inline-block;
-	width: 100px;
-	height: 34px;
-	background-color: #f2f2f2;
-	border: none;
-	position: relative;
-  left: 169px;
-	top: 5px;
+.btn_special:hover {
+	background-color: #604e43;
 }
-.form__name-1 {
-	display: block;
-	color: #000;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 15px;
-	position: relative;
-	left: 333px;
-	top: -20px;
-
+.btn_special:active {
+	color: #857871;
+	background-color: #604e43;
 }
-.form__name_small-1 {
-	display: inline-block;
-	width: 100px;
-	height: 34px;
-	background-color: #f2f2f2;
-	border: none;
-	position: relative;
-	left: 400px;
-	top: -56px;
-}
-.calendar-img {
-	width: 23px;
-	height: 22px;
-	background: url(../img/calendar-icon.png) no-repeat;
-	display: block;
-	position: relative;
-	top: -21px;
-	left: 471px;
-}
-.placeholder__date {
-	text-transform: uppercase;
-  font-weight: bold;
-  font-size: 15px;
-  position: relative;
-  color: #000;
-	top: 6px;
-  left: -144px;
-}
-
 
 /** Стили для декоративных элементов **/
 .feature-line_default__left {
