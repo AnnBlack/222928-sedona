@@ -26,7 +26,9 @@ body {
   display: table;
   clear: both;
 }
-
+main {
+	min-height: auto;
+}
 
 
 /** Стили для хедера **/
@@ -98,12 +100,13 @@ body {
 }
 .sedona-title-line {
 	display: block;
-    background: url(../img/Sedona.png) center;
+    background: url(../img/Sedona.png) no-repeat;
     width: 458px;
     height: 78px;
-    position: absolute;
-    top: 325px;
-    left: 606px;
+    position: relative;
+    top: 272px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-title-shape {
 	background: url(../img/shape.png) no-repeat center;
@@ -196,8 +199,8 @@ body {
     height: 240px;
 }
 .map {
-    height: 100%;
-    position: relative;
+    position: absolute;
+    top: 2250px;
 }
 
 
@@ -206,17 +209,17 @@ body {
 .pre-form {
 	width: 100%;
     margin-top: -30px;
-    height: 335px;
+    height: 255px;
     box-sizing: border-box;
     color: #fff;
     position: relative;
     padding-top: 61px;
 }
 .order-form {
-    position: absolute;
-    z-index: 10;
-    margin-top: -100px;
-    left: 555px;
+    position: relative;
+    z-index: 20;
+    margin-left: auto;
+    margin-right: auto;
     width: 550px;
     height: 466px;
     background-color: #fff;
@@ -232,13 +235,11 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	background-color: #766357;
 }
 .order-form-title {
-	font-size: 23px;
-	line-height: 21px;
 	color: #fff;
 	width: 550px;
 	position: relative;
 	top: 28px;
-
+	text-decoration: none;
 }
 .form-sorting__btn {
 
@@ -275,7 +276,7 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	background-color: #f2f2f2;
 	border: none;
 	position: relative;
-  left: 169px;
+    left: 169px;
 	top: 5px;
 }
 .form__name-1 {
@@ -316,13 +317,55 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	top: 6px;
   left: -144px;
 }
-.plus {
+.plus, .minus, .minus-1, .plus-1 {
+	display: inline-block;
+    position: relative;
+}
 
+.plus, .plus-1 {
+	width: 11px;
+	height: 11px;
+	background: url(../img/plus-icon.png) no-repeat;
+	top: 4px;	 
+}
+.plus {
+	left: 125px;
+    
+}
+.minus, .minus-1 {
+	width: 12px;
+    height: 3px;
+    background: url(../img/minus-icon.png) no-repeat;   
 }
 .minus {
-	width: 10px;
-	height: 3px;
-	color: #a9a9a9;
+	left: 73px;
+}
+.minus-1 {
+	top: -60px;
+    left: 305px;
+}
+.plus-1 {
+	top: -56px;
+    left: 358px;
+}
+.adult-number-sum {
+	display: inline-block;
+    width: 10px;
+    height: 17px;
+    /* content: "2"; */
+    position: absolute;
+    left: 213px;
+    top: 286px;
+    color: #000;
+}
+.child-number-sum {
+	display: inline-block;
+    width: 10px;
+    height: 17px;
+    position: absolute;
+    left: 448px;
+    top: 284px;
+    color: #000;
 }
 .hotel-form {
 	position: relative;
@@ -334,9 +377,9 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 .main-footer {
     height: 125px;
     width: 1200px;
-    position: absolute;
+    position: relative;
     background: rgba(255, 255, 255, 0.82);
-    margin-top: -126px;
+    top: 87px;
 }
 .hashtag {
 	color: #000;
@@ -468,15 +511,14 @@ h1, h2, h3, p {
 .btn_search {
 	width:415px;
 	height:50px;
-
 	background-color: #81b3d2;
 	color:#fff;
 	font-weight:bold;
 	font-size:21px;
 	border: none;
 	position: relative;
-	right: 37px;
-  top: 26px;
+	right: 68px;
+    top: 33px;
 
 }
 .btn_search:hover {
@@ -575,4 +617,139 @@ h1, h2, h3, p {
     position: relative;
     top: -10px;
     left: 151px;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
