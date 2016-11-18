@@ -148,11 +148,12 @@ main {
 }
 .features-icon {
 	text-align: center;
-  width: 22%;
-  min-height: 60px;
-  display: inline-block;
-  margin-right: 72px;
-  color: #000;
+    width: 22%;
+    min-height: 60px;
+    display: inline-block;
+    margin-right: 72px;
+    color: #000;
+    vertical-align: top;
 }
 .features-icon:nth-child(3) {
 	margin-right: 30px;
@@ -180,38 +181,37 @@ main {
   margin-top: 54px;
 }
 .content-center h3 {
-	width: 176px;
+  width: 176px;
   margin-left: 107px;
   line-height: 1.3em;
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 .content-center p {
-	text-align: center;
+  text-align: center;
   width: 273px;
   margin-left: 63px;
   margin-right: 50px;
-	position: relative;
+  position: relative;
   top: 30px;
 }
 .background {
-	display: inline-block;
-	background-image: url('../img/grey-back.png');
+  display: inline-block;
+  background-image: url('../img/grey-back.png');
   padding-top: 32px;
-	width: 100%;
+  width: 100%;
   height: 240px;
+  vertical-align: top;
 }
 .map {
-  position: absolute;
-  top: 2250px;
+  display: inline-block;
 }
 
 
 
 /** Стили для форм **/
 .pre-form {
-	width: 100%;
-  margin-top: -30px;
-  height: 255px;
+  width: 100%;
+  height: 300px;
   box-sizing: border-box;
   color: #fff;
   position: relative;
@@ -219,11 +219,12 @@ main {
 }
 .order-form {
   position: relative;
+  top: -10px;
   z-index: 20;
   margin-left: auto;
   margin-right: auto;
   width: 550px;
-  height: 466px;
+  height: 386px;
   background-color: #fff;
 
 	-webkit-box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
@@ -235,6 +236,8 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	width:550px;
 	height:80px;
 	background-color: #766357;
+	margin-left: auto;
+    margin-right: auto;
 }
 .order-form-title {
 	color: #fff;
@@ -352,23 +355,36 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
   left: 358px;
 }
 .adult-number-sum {
-	display: inline-block;
+  display: inline-block;
   width: 10px;
   height: 17px;
   position: absolute;
   left: 225px;
-  top: 280px;
+  margin-top: 14px;
   color: #000;
+  vertical-align: top;
 }
 .child-number-sum {
-	display: inline-block;
+  display: inline-block;
   width: 10px;
   height: 17px;
   position: absolute;
   left: 444px;
-  top: 278px;
+  margin-top: -37px;
   color: #000;
+  vertical-align: top;
 }
+
+.popup-form {
+	display: block;
+	position: absolute;
+	top: 2080px;
+	left: 370px;
+}
+.form-hide {
+	display: none;
+}
+
 .hotel-form {
 	position: relative;
 	width: 380px;
@@ -420,8 +436,9 @@ input[type="checkbox"] {
   height: 125px;
   width: 1200px;
   position: relative;
+  z-index: 50;
   background: rgba(255, 255, 255, 0.82);
-  top: 176px;
+  top: -110px;
 }
 .hashtag {
 	color: #000;
@@ -553,9 +570,9 @@ h1, h2, h3, p {
 	line-height: 26px;
 	color: #000;
 	position: relative;
-	left: 45px;
+	left: 70px;
 	top: 20px;
-	width: 170px;
+	width: 119px;
 }
 
 

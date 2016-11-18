@@ -101,10 +101,16 @@
           <p class="page-description_default">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
         </div>
+        <div class="map">
+          <img src="img/map.jpg" alt="map">
+        </div>        
+      </main>
+    </div>
+      <div class="popup-form">
+        <div class="order-header">
+          <a class="order-form-title" href="#"><h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2></a>
+        </div>
         <div class="order-form">
-          <div class="order-header">
-            <a class="order-form-title" href="#"><h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2></a>
-          </div>
           <form action="#" method="post">
           <label for="date-in" class="form__name">ДАТА ВЪЕЗДА:</label>
             <input type="text" name="date-in" class="form__name_default" id="date-in">
@@ -128,12 +134,10 @@
           <button type="submit" class="btn_search">НАЙТИ</button>
           </form>
         </div>
-        <div class="map">
-          <img src="img/map.jpg" alt="map">
-        </div>
-      </main>
-      <footer class="main-footer">
-        <div class="clearfix" id="contacts">
+      </div>
+
+      <footer class="container main-footer clearfix">
+        
           <span class="hashtag">#visitsedona</span>
           <section class="footer-social">
             <a class="btn_social" href="#"><img class="btn_social-tw" src="img/twitter.png" alt="twitter">twitter</a>
@@ -144,16 +148,18 @@
           <p>WEBSITE BY:</p>
           <div class="footer-copyright-link"><a href="https://htmlacademy.ru">html-academy</a></div>
           </section>
-        </div>
+
       </footer>
-    </div>
-    <!--<script type="text/javascript">
-      var FormHeader = document.querySelector(".order-header");
-      var Form = document.querySelector("form");
+    
+    <script>
+      var form = document.querySelector(".order-header");
+      var popup = document.querySelector(".order-form");
 
-      FormHeader.addEventListener("click", function(){})
-
+      form.addEventListener("click", function(event) {
       event.preventDefault();
-    </script>-->
+      popup.classList.add("form-hide");
+
+      });
+    </script>
   </body>
 </html>
