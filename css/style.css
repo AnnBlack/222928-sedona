@@ -77,7 +77,11 @@ main {
 	float: right;
 	margin-top: 29px;
 }
-
+.logo a {
+	width: 138px;
+	position: relative;
+	right: 75px;
+}
 .logo {
 	width: 138px;
 	margin-left: auto;
@@ -205,9 +209,165 @@ main {
 .map {
   display: inline-block;
 }
+.hotels-main {
 
+}
+.form-sorting {
+	width: 100%;
+  height: 90px;
+  margin-top: -327px;
 
-
+}
+.form-sorting .form-sorting-title {
+	float: left;
+  margin-left: 80px;
+  padding-top: 25px;
+}
+.form-sorting-set {
+	color: #000;
+	float: left;
+	padding-top: 30px;
+  padding-left: 55px;
+	text-decoration: none;
+}
+.form-sorting-reiting {
+	float: left;
+	padding-top: 30px;
+	text-decoration: none;
+	position: relative;
+  left: 21px;
+  margin-left: 35px;
+}
+.set-checked {
+	color: #a2c7de;
+}
+.set-default {
+	color: #d1d1d1;
+	border-style: dotted;
+  border-width: 0px 0px 2px 0px;
+	border-color: #92bdd8;
+}
+.set-default:hover {
+	color: #92bdd8;
+}
+.set-default:active {
+	color: #000;
+	border:none;
+}
+.form-sorting__btn {
+	width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+	border-bottom: 10px solid #cccccc;
+	position: relative;
+	display: block;
+	top: 32px;
+	left: 1095px;
+	cursor: pointer;
+}
+.form-sorting__btn:hover {
+	border-bottom: 10px solid #000;
+}
+.form-sorting__btn:active {
+	border-bottom: 10px solid #92bdd8;
+}
+.form-sorting__btn_checked {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #81b3d2;
+	position: relative;
+	display: block;
+	top: 22px;
+	left: 1122px;
+	cursor: pointer;
+}
+.devide-line {
+	width: 100%;
+	height: 1px;
+	background-color: #cccccc;
+}
+.form-result {
+	width: 100%;
+	height: 150px;
+	margin-bottom: 2px;
+}
+.form-result-img {
+	float: left;
+	margin-left: 80px;
+	padding-top: 33px;
+}
+.form-result-title {
+	float: left;
+	position: relative;
+	top: 33px;
+	left: 31px;
+	color: #000;
+	display: block;
+  font-size: 20px;
+}
+.form-result-type, .form-result-type-1, .form-result-type-2 {
+	color: #000;
+	width: 100%;
+	height: 14px;
+	position: relative;
+	top: 65px;
+	left: -191px;
+	font-weight: lighter;
+	padding-right: 46px;
+}
+.form-result-type-1 {
+	left: -151px;
+	padding-right: 68px;
+}
+.form-result-type-2 {
+	left: -212px;
+	padding-right: 24px;
+}
+.form-result-btn {
+	width: 520px;
+	display: block;
+	position: relative;
+	top: 72px;
+	left: 32px;
+}
+.rating-name {
+	color: #000;
+	float: right;
+	position: relative;
+	top: 40px;
+	right: -29px;
+	width: 115px;
+	height: 21px;
+	background-color: #f2f2f2;
+	text-align: center;
+	padding-top: 10px;
+}
+.stars {
+	position: relative;
+	float: right;
+	top: -30px;
+	right: 61px;
+	width: 94px;
+}
+.star {
+	display: inline-block;
+	width: 42px;
+	height: 17px;
+	background: url("../img/stars.png") no-repeat;
+	vertical-align: top;
+	float: right;
+}
+.star-1 {
+	display: inline-block;
+	width: 18px;
+	height: 17px;
+	background: url("../img/stars-1.png") no-repeat;
+	vertical-align: top;
+	float: right;
+}
 /** Стили для форм **/
 .pre-form {
   width: 100%;
@@ -247,13 +407,6 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	top: 28px;
 	text-decoration: none;
 	cursor: pointer;
-}
-.form-sorting__btn {
-
-}
-
-.form-sorting__btn_checked {
-
 }
 .form__name {
 	display: block;
@@ -417,6 +570,7 @@ input[type="checkbox"] {
 	background: url("../img/checkbox.png");
 	position: absolute;
   left: 10px;
+	cursor: pointer;
 }
 .checkbox-default {
 	display: block;
@@ -425,6 +579,7 @@ input[type="checkbox"] {
 	background: url("../img/checkbox-default.png");
 	position: absolute;
   left: 10px;
+	cursor: pointer;
 }
 /** Стилия для футера **/
 .main-footer {
@@ -615,7 +770,7 @@ h1, h2, h3, p {
   width: 109px;
   text-align: center;
   background-color: #669ec0;
-  height: 20px;
+  height: 15px;
   padding: 8px;
 }
 .btn_default:hover {
@@ -632,7 +787,7 @@ h1, h2, h3, p {
   width: 150px;
   text-align: center;
   background-color: #766357;
-  height: 20px;
+  height: 15px;
   padding: 8px;
 }
 .btn_special:hover {
