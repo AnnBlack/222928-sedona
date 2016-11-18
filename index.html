@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -138,28 +138,17 @@
       </div>
 
       <footer class="container main-footer clearfix">
-
-          <span class="hashtag">#visitsedona</span>
-          <section class="footer-social">
-            <a class="btn_social" href="#"><img class="btn_social-tw" src="img/twitter.png" alt="twitter">twitter</a>
-            <a class="btn_social" href="#"><img class="btn_social-fb" src="img/facebook.png" alt="facebook">Фейсбук</a>
-            <a class="btn_social" href="#"><img class="btn_social-you" src="img/youtube.png" alt="youtube">youtube</a>
-          </section>
-          <section class="footer-copyright">
+        <span class="hashtag">#visitsedona</span>
+        <section class="footer-social">
+          <a class="btn_social" href="#"><img class="btn_social-tw" src="img/twitter.png" alt="twitter">twitter</a>
+          <a class="btn_social" href="#"><img class="btn_social-fb" src="img/facebook.png" alt="facebook">Фейсбук</a>
+          <a class="btn_social" href="#"><img class="btn_social-you" src="img/youtube.png" alt="youtube">youtube</a>
+        </section>
+        <section class="footer-copyright">
           <p>WEBSITE BY:</p>
           <div class="footer-copyright-link"><a href="https://htmlacademy.ru">html-academy</a></div>
-          </section>
-
+        </section>
       </footer>
-
-    <script>
-      var titleElem = document.querySelector(".order-header");
-      var popup = document.querySelector(".order-form");
-
-      titleElem.onclick = function () {
-        popup.classList.toggle("form-hide");
-
-      };
-    </script>
-  </body>
-</html>
+      <script src="js/script.js"></script>
+    </body>
+  </html>

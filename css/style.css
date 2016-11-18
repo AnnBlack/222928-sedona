@@ -152,12 +152,12 @@ main {
 }
 .features-icon {
 	text-align: center;
-    width: 22%;
-    min-height: 60px;
-    display: inline-block;
-    margin-right: 72px;
-    color: #000;
-    vertical-align: top;
+  width: 22%;
+  min-height: 60px;
+  display: inline-block;
+  margin-right: 72px;
+  color: #000;
+  vertical-align: top;
 }
 .features-icon:nth-child(3) {
 	margin-right: 30px;
@@ -397,7 +397,7 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	height:80px;
 	background-color: #766357;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 .order-form-title {
 	color: #fff;
@@ -661,7 +661,7 @@ input[type="checkbox"] {
 	width: 113px;
 	height: 39px;
 	position: relative;
-    right: 145px;
+  right: 145px;
 }
 
 .footer-copyright-link:active {
@@ -854,7 +854,6 @@ h1, h2, h3, p {
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -862,12 +861,9 @@ h1, h2, h3, p {
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -929,7 +925,6 @@ h1, h2, h3, p {
   top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
