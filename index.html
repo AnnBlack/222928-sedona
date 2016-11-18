@@ -101,10 +101,16 @@
           <p class="page-description_default">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
         </div>
+        <div class="map">
+          <img src="img/map.jpg" alt="map">
+        </div>
+      </main>
+    </div>
+      <div class="popup-form">
+        <div class="order-header">
+          <div class="order-form-title"><h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2></div>
+        </div>
         <div class="order-form">
-          <div class="order-header">
-            <a class="order-form-title" href="#"><h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2></a>
-          </div>
           <form action="#" method="post">
           <label for="date-in" class="form__name">ДАТА ВЪЕЗДА:</label>
             <input type="text" name="date-in" class="form__name_default" id="date-in">
@@ -114,26 +120,25 @@
             <input type="text" name="date-out" id="date-out" class="form__name_default">
             <span class="placeholder__date">4 июля 2016</span>
             <span class="calendar-img"></span>
-          <label for="adult-number" class="form__name">ВЗРОСЛЫЕ:</label>
+          <label for="adult-number" class="form__name">ВЗРОСЛЫЕ:
             <input type="text" name="adult-number" id="adult-number" class="form__name_small">
             <span class="minus"></span>
             <span class="plus"></span>
             <span class="adult-number-sum">2</span>
-          <label for="child-number" class="form__name-1">ДЕТИ:</label>
+          </label>
+          <label for="child-number" class="form__name-1">ДЕТИ:
             <input type="text" name="child-number" id="child-number" class="form__name_small-1">
             <span class="minus-1"></span>
             <span class="plus-1"></span>
             <span class="child-number-sum">0</span>
-
+          </label>
           <button type="submit" class="btn_search">НАЙТИ</button>
           </form>
         </div>
-        <div class="map">
-          <img src="img/map.jpg" alt="map">
-        </div>
-      </main>
-      <footer class="main-footer">
-        <div class="clearfix" id="contacts">
+      </div>
+
+      <footer class="container main-footer clearfix">
+
           <span class="hashtag">#visitsedona</span>
           <section class="footer-social">
             <a class="btn_social" href="#"><img class="btn_social-tw" src="img/twitter.png" alt="twitter">twitter</a>
@@ -144,16 +149,17 @@
           <p>WEBSITE BY:</p>
           <div class="footer-copyright-link"><a href="https://htmlacademy.ru">html-academy</a></div>
           </section>
-        </div>
+
       </footer>
-    </div>
-    <!--<script type="text/javascript">
-      var FormHeader = document.querySelector(".order-header");
-      var Form = document.querySelector("form");
 
-      FormHeader.addEventListener("click", function(){})
+    <script>
+      var titleElem = document.querySelector(".order-header");
+      var popup = document.querySelector(".order-form");
 
-      event.preventDefault();
-    </script>-->
+      titleElem.onclick = function () {
+        popup.classList.toggle("form-hide");
+
+      };
+    </script>
   </body>
 </html>
