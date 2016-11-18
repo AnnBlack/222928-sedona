@@ -77,7 +77,7 @@ main {
 	float: right;
 	margin-top: 29px;
 }
-a img {
+.logo a {
 	width: 138px;
 	position: relative;
 	right: 75px;
