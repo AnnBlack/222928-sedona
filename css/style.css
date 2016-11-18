@@ -246,6 +246,7 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	position: relative;
 	top: 28px;
 	text-decoration: none;
+	cursor: pointer;
 }
 .form-sorting__btn {
 
@@ -282,8 +283,7 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	background-color: #f2f2f2;
 	border: none;
 	position: relative;
-  left: 182px;
-	top: 5px;
+  left: 28px;
 }
 .form__name-1 {
 	display: block;
@@ -293,7 +293,6 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	font-size: 15px;
 	position: relative;
 	left: 333px;
-	top: -20px;
 }
 .form__name_small-1 {
 	display: inline-block;
@@ -302,8 +301,6 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	background-color: #f2f2f2;
 	border: none;
 	position: relative;
-	left: 400px;
-	top: -56px;
 }
 .calendar-img {
 	width: 23px;
@@ -332,34 +329,32 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	width: 11px;
 	height: 11px;
 	background: url(../img/plus-icon.png) no-repeat;
-	top: 4px;
 }
 .plus {
-	left: 137px;
-
+  left: -13px;
 }
 .minus, .minus-1 {
 	width: 12px;
   height: 3px;
   background: url(../img/minus-icon.png) no-repeat;
+	top: -4px;
 }
 .minus {
-	left: 86px;
+  left: -65px;
 }
 .minus-1 {
-	top: -60px;
-  left: 305px;
+	left: -90px;
 }
 .plus-1 {
-	top: -57px;
-  left: 358px;
+	left: -48px;
 }
 .adult-number-sum {
   display: inline-block;
   width: 10px;
   height: 17px;
   position: absolute;
-  left: 225px;
+  left: 174px;
+	top: -5px;
   margin-top: 14px;
   color: #000;
   vertical-align: top;
@@ -369,7 +364,8 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
   width: 10px;
   height: 17px;
   position: absolute;
-  left: 444px;
+  left: 97px;
+	top: 46px;
   margin-top: -37px;
   color: #000;
   vertical-align: top;
@@ -379,12 +375,11 @@ box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
 	display: block;
 	position: absolute;
 	top: 2080px;
-	left: 370px;
+	width: 100%;
 }
 .form-hide {
 	display: none;
 }
-
 .hotel-form {
 	position: relative;
 	width: 380px;
@@ -455,7 +450,7 @@ input[type="checkbox"] {
 	width: 180px;
 	text-align: center;
   position: relative;
-  left: 250px;
+  left: 195px;
   top: 40px;
 }
 .btn_social {
@@ -586,8 +581,8 @@ h1, h2, h3, p {
 	font-size:21px;
 	border: none;
 	position: relative;
-	left: -65px;
-  top: 37px;
+	left: 68px;
+  top: 24px;
 }
 .btn_search:hover {
 	background-color: #669ec0;
