@@ -309,7 +309,15 @@ main {
   left: 31px;
   color: #000;
   display: block;
-  font-size: 20px;
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.form-result-title:hover {
+  color: #81b3d2;
+}
+.form-result-title:active {
+  color: #cacaca;
 }
 .form-result-type, .form-result-type-1, .form-result-type-2 {
   color: #000;
@@ -326,7 +334,7 @@ main {
   padding-right: 68px;
 }
 .form-result-type-2 {
-  left: -212px;
+  left: -200px;
   padding-right: 24px;
 }
 .form-result-btn {
@@ -604,26 +612,38 @@ main {
   left: 325px;
 }
 input[type="checkbox"] {
-	display: none;
+  position: absolute;
+  left: -9999px;
 }
 .checkbox-checked {
-	display: block;
-	width: 26px;
-	height: 22px;
-	background: url("../img/checkbox.png");
-	position: absolute;
+  display: block;
+  width: 26px;
+  height: 22px;
+  background: url("../img/checkbox-checked.png");
+  position: absolute;
   left: 10px;
-	cursor: pointer;
+  cursor: pointer;
 }
 .checkbox-default {
-	display: block;
-	width: 22px;
-	height: 22px;
-	background: url("../img/checkbox-default.png");
-	position: absolute;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url("../img/checkbox-default.png");
+  position: absolute;
   left: 10px;
-	cursor: pointer;
+  cursor: pointer;
 }
+.checkbox-disabled {
+  display: block;
+  width: 26px;
+  height: 22px;
+  background: url("../img/checkbox-checked.png");
+  opacity: 0.3;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+
 /** Стилия для футера **/
 .main-footer {
   height: 125px;
