@@ -4,9 +4,8 @@ body {
   min-width: 1280px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #ffffff;
-  font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   background: #fff url("../img/grey-back.png") repeat center top;
 }
 
@@ -32,7 +31,7 @@ main {
 /** Стили для хедера **/
 .main-header {
   width: 1200px;
-  height: 64px;
+  height: 71px;
   background-color: #fff;
   margin-bottom: 0px;
 }
@@ -69,11 +68,11 @@ main {
 }
 .left {
   float: left;
-  margin-top: 29px;
+  margin-top: 35px;
 }
 .right {
   float: right;
-  margin-top: 29px;
+  margin-top: 35px;
 }
 .logo a {
   width: 138px;
@@ -81,11 +80,11 @@ main {
   right: 75px;
 }
 .logo {
-  width: 138px;
+  width: 143px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 15px;
+  top: 13px;
 }
 
 
@@ -104,7 +103,7 @@ main {
 }
 .sedona-title-line {
   display: block;
-  background: url(../img/sedona.png) no-repeat;
+  background: url(../img/title.png) no-repeat;
   width: 458px;
   height: 78px;
   position: relative;
@@ -117,26 +116,30 @@ main {
   width: 100%;
   height: 57px;
   position: relative;
-  top: 370px;
+  top: 360px;
 }
 
 .about {
   width: 100%;
-  min-height: 220px;
+  min-height: 230px;
   background-color: #fff;
   position: relative;
-  margin-top: -175px;
+  margin-top: -185px;
 }
 
 .about .page-title_default {
-  width: 450px;
+  font-size: 25px;
+  width: 485px;
   position: absolute;
   margin-top: 44px;
   margin-left: 373px;
+  line-height: 32px;
+  font-weight: bold;
 }
 .about .page-description_default {
   position: relative;
-  top: 130px;
+  top: 152px;
+  font-size: 17px;
 }
 .features {
   width: 100%;
@@ -145,7 +148,7 @@ main {
 }
 .features-list-icon {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 72px;
   margin-bottom: 50px;
   vertical-align: top;
   height: 200px;
@@ -155,15 +158,10 @@ main {
   width: 22%;
   min-height: 60px;
   display: inline-block;
-  margin-right: 72px;
   color: #000;
   vertical-align: top;
-}
-.features-icon:nth-child(3) {
-  margin-right: 30px;
-}
-.features-icon:first-child {
-  margin-left: 123px;
+  margin-right: 61px;
+  margin-left: 65px;
 }
 .feature-1 img {
   float: right;
@@ -189,21 +187,24 @@ main {
   margin-left: 107px;
   line-height: 1.3em;
   margin-bottom: 16px;
+  font-size: 23px;
+  font-weight: bold;
 }
 .content-center p {
   text-align: center;
-  width: 273px;
+  font-size: 16px;
+  width: 280px;
   margin-left: 63px;
   margin-right: 50px;
   position: relative;
-  top: 30px;
+  top: 25px;
 }
 .background {
   display: inline-block;
   background-image: url('../img/grey-back.png');
   padding-top: 32px;
   width: 100%;
-  height: 240px;
+  height: 260px;
   vertical-align: top;
 }
 .map {
@@ -384,8 +385,8 @@ main {
   z-index: 20;
   margin-left: auto;
   margin-right: auto;
-  width: 550px;
-  height: 386px;
+  width: 570px;
+  height: 410px;
   background-color: #fff;
 
   -webkit-box-shadow: 3px 8px 32px -20px rgba(0,0,0,0.75);
@@ -397,7 +398,7 @@ main {
 }
 .order-header {
   display: block;
-  width: 550px;
+  width: 570px;
   height: 80px;
   background-color: #766357;
   margin-left: auto;
@@ -405,8 +406,9 @@ main {
 }
 .order-form-title {
   color: #fff;
-  font-size: 20px;
-  width: 550px;
+  font-size: 26px;
+  font-weight: bold;
+  width: 570px;
   position: relative;
   top: 28px;
   text-decoration: none;
@@ -421,46 +423,57 @@ main {
   position: relative;
   left: 53px;
   margin-top: 8px;
-  top: 35px;
+  top: 83px;
+  width: 244px;
 }
 .form__name_default {
   display: inline-block;
   vertical-align: top;
-  width: 319px;
+  width: 328px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
-  top: 7px;
-  left: 180px;
+  top: 58px;
+  left: 170px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 17px;
 }
 .form__name_small {
   display: inline-block;
   vertical-align: top;
-  width: 100px;
+  width: 67px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
-  left: 28px;
+  top: -12px;
+  left: 51px;
+  padding-left: 57px;
 }
 .form__name-1 {
-  display: block;
+  display: inline;
+  width: 165px;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
   position: relative;
-  left: 333px;
+  left: 349px;
+  top: 35px;
+  vertical-align: top;
 }
 .form__name_small-1 {
   display: inline-block;
   vertical-align: top;
-  width: 100px;
+  width: 67px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
+  padding-left: 57px;
 }
 .calendar-img {
   width: 23px;
@@ -468,17 +481,8 @@ main {
   background: url(../img/calendar-icon.png) no-repeat;
   display: block;
   position: relative;
-  top: -21px;
+  top: 30px;
   left: 471px;
-}
-.placeholder__date {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 15px;
-  position: relative;
-  color: #000;
-  top: 6px;
-  left: -129px;
 }
 .plus, .minus, .minus-1, .plus-1 {
   display: inline-block;
@@ -492,16 +496,16 @@ main {
   background: url(../img/plus-icon.png) no-repeat;
 }
 .plus {
-  left: -13px;
+  left: 7px;
 }
 .minus, .minus-1 {
   width: 12px;
   height: 3px;
   background: url(../img/minus-icon.png) no-repeat;
-  top: -4px;
+  top: 4px;
 }
 .minus {
-  left: -65px;
+  left: -63px;
 }
 .minus-1 {
   left: -90px;
@@ -509,33 +513,11 @@ main {
 .plus-1 {
   left: -48px;
 }
-.adult-number-sum {
-  display: inline-block;
-  width: 10px;
-  height: 17px;
-  position: absolute;
-  left: 174px;
-  top: -5px;
-  margin-top: 14px;
-  color: #000;
-  vertical-align: top;
-}
-.child-number-sum {
-  display: inline-block;
-  width: 10px;
-  height: 17px;
-  position: absolute;
-  left: 97px;
-  top: 46px;
-  margin-top: -37px;
-  color: #000;
-  vertical-align: top;
-}
 
 .popup-form {
   display: block;
   position: absolute;
-  top: 2080px;
+  top: 2129px;
   width: 100%;
 }
 .form-hide {
@@ -730,6 +712,7 @@ h1, h2, h3, p {
 }
 
 .page-title_default {
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: #000;
@@ -745,19 +728,20 @@ h1, h2, h3, p {
 }
 
 .page-title_increased {
-  font-size: 30px;
+  font-size: 37px;
   line-height: 24px;
   font-weight: bold;
   color: #000;
 }
 
 .page-description_default {
-  font-size: 12px;
+  font-size: 17px;
   line-height: 26px;
   color: #333333;
   font-weight: lighter;
   position: relative;
-  top: 37px;
+  top: 43px;
+  width: 100%;
 }
 
 .page-description_special {
@@ -774,21 +758,22 @@ h1, h2, h3, p {
   left: 70px;
   top: 20px;
   width: 119px;
+  font-weight: bold;
 }
 
 
 /** Стили для кнопок **/
 .btn_search {
-  width:415px;
-  height:50px;
+  width: 462px;
+  height: 59px;
   background-color: #81b3d2;
-  color:#fff;
+  color: #fff;
   font-weight:bold;
-  font-size:21px;
+  font-size: 21px;
   border: none;
   position: relative;
-  left: 68px;
-  top: 24px;
+  left: 52px;
+  top: 80px;
 }
 .btn_search:hover {
   background-color: #669ec0;
@@ -857,8 +842,8 @@ h1, h2, h3, p {
   height: 2px;
   position: relative;
   background-color: #ffffff;
-  top: 10px;
-  left: 160px;
+  top: 8px;
+  left: 164px;
 
 }
 .feature-line_default__right {
@@ -867,8 +852,8 @@ h1, h2, h3, p {
   height: 2px;
   background-color: #ffffff;
   position: relative;
-  left: 216px;
-  top: -7px;
+  left: 212px;
+  top: -10px;
 }
 .feature-line_special__left {
   display: block;
@@ -877,7 +862,7 @@ h1, h2, h3, p {
   background-color: #000;
   position: relative;
   top: 53px;
-  left: 97px;
+  left: 102px;
 }
 .feature-line_special__right {
   display: block;
@@ -885,8 +870,8 @@ h1, h2, h3, p {
   height: 2px;
   background-color: #000;
   position: relative;
-  top: 36px;
-  left: 156px;
+  top: 35px;
+  left: 148px;
   margin-bottom: 45px;
 }
 .feature-line_number {
@@ -894,6 +879,7 @@ h1, h2, h3, p {
   height: 2px;
   position: relative;
   top: 45px;
+  left: -3px;
 }
 .filter-range {
   position: relative;
