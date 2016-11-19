@@ -141,6 +141,7 @@ main {
 .about .page-description_default {
   position: relative;
   top: 142px;
+  left: -6px;
   font-size: 13px;
 }
 .features {
@@ -162,8 +163,7 @@ main {
   display: inline-block;
   color: #000;
   vertical-align: top;
-  margin-right: 56px;
-  margin-left: 73px;
+  margin-left: 93px;
 }
 .feature-1 img {
   float: right;
@@ -439,13 +439,13 @@ main {
 .form__name_default {
   display: inline-block;
   vertical-align: top;
-  width: 356px;
+  width: 328px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
   top: 37px;
-  left: 165px;
+  left: 171px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
@@ -454,13 +454,13 @@ main {
 .form__name_small {
   display: inline-block;
   vertical-align: top;
-  width: 67px;
+  width: 62px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
-  top: -12px;
-  left: 34px;
+  top: -15px;
+  left: 25px;
   padding-left: 57px;
 }
 .form__name-1 {
@@ -478,12 +478,12 @@ main {
 .form__name_small-1 {
   display: inline-block;
   vertical-align: top;
-  width: 60px;
+  width: 67px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
-  padding-left: 51px;
+  padding-left: 46px;
 }
 .child-title {
   display: inherit;
@@ -519,12 +519,12 @@ main {
   background: url(../img/minus-icon.png) no-repeat;
 }
 .minus {
-  left: 149px;
-  top: 5px;
+  left: 131px;
+  top: 4px;
 }
 .minus-1 {
-  top: 18px;
-  right: 82px;
+  top: 19px;
+  right: 89px;
 
 }
 .plus-1 {
@@ -662,7 +662,7 @@ input[type="checkbox"] {
   display: block;
   float: left;
   margin-left: 133px;
-  margin-top: 20px;
+  margin-top: 45px;
 }
 .footer-social {
   float: left;
@@ -670,7 +670,7 @@ input[type="checkbox"] {
   text-align: center;
   position: relative;
   left: 233px;
-  top: 7px;
+  top: 32px;
 }
 .btn_social {
   display: inline-block;
@@ -705,6 +705,7 @@ input[type="checkbox"] {
   float: right;
   position: relative;
   color: #000;
+  margin-top: 23px;
 }
 .footer-copyright p {
   position: relative;
@@ -773,8 +774,6 @@ h1, h2, h3, p {
   font-weight: lighter;
   position: relative;
   top: 33px;
-  left: -13px;
-  width: 108%;
 }
 
 .page-description_special {
@@ -880,8 +879,8 @@ h1, h2, h3, p {
   height: 2px;
   position: relative;
   background-color: #ffffff;
-  top: 8px;
-  left: 164px;
+  top: 10px;
+  left: 170px;
 
 }
 .feature-line_default__right {
@@ -890,8 +889,8 @@ h1, h2, h3, p {
   height: 2px;
   background-color: #ffffff;
   position: relative;
-  left: 217px;
-  top: -10px;
+  left: 221px;
+  top: -9px;
 }
 .feature-line_special__left {
   display: block;
