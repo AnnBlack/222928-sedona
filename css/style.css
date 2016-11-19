@@ -76,8 +76,9 @@ main {
 }
 .logo a {
   width: 138px;
-  position: relative;
-  right: 75px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo {
   width: 143px;
@@ -129,10 +130,10 @@ main {
 
 .about .page-title_default {
   font-size: 25px;
-  width: 485px;
+  width: 640px;
   position: absolute;
   margin-top: 44px;
-  margin-left: 373px;
+  margin-left: 313px;
   line-height: 32px;
   font-weight: bold;
 }
@@ -183,16 +184,16 @@ main {
   margin-top: 54px;
 }
 .content-center h3 {
-  width: 176px;
-  margin-left: 107px;
+  width: 207px;
+  margin-left: 93px;
+  margin-bottom: 22px;
   line-height: 1.3em;
-  margin-bottom: 16px;
   font-size: 23px;
   font-weight: bold;
 }
 .content-center p {
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   width: 280px;
   margin-left: 63px;
   margin-right: 50px;
@@ -423,19 +424,20 @@ main {
   position: relative;
   left: 53px;
   margin-top: 8px;
-  top: 83px;
+  top: 63px;
   width: 244px;
+  height: 16px;
 }
 .form__name_default {
   display: inline-block;
   vertical-align: top;
-  width: 328px;
+  width: 312px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
-  top: 58px;
-  left: 170px;
+  top: 35px;
+  left: 185px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
@@ -450,7 +452,7 @@ main {
   border: none;
   position: relative;
   top: -12px;
-  left: 51px;
+  left: 34px;
   padding-left: 57px;
 }
 .form__name-1 {
@@ -461,19 +463,25 @@ main {
   font-weight: bold;
   font-size: 15px;
   position: relative;
-  left: 349px;
+  left: 340px;
   top: 35px;
   vertical-align: top;
 }
 .form__name_small-1 {
   display: inline-block;
   vertical-align: top;
-  width: 67px;
+  width: 60px;
   height: 34px;
   background-color: #f2f2f2;
   border: none;
   position: relative;
-  padding-left: 57px;
+  padding-left: 51px;
+}
+.child-title {
+  display: inherit;
+  position: relative;
+  top: 9px;
+  margin-right: 12px;
 }
 .calendar-img {
   width: 23px;
@@ -481,13 +489,13 @@ main {
   background: url(../img/calendar-icon.png) no-repeat;
   display: block;
   position: relative;
-  top: 30px;
+  top: 6px;
   left: 471px;
 }
 .plus, .minus, .minus-1, .plus-1 {
   display: inline-block;
   vertical-align: top;
-  position: relative;
+  position: absolute;
 }
 
 .plus, .plus-1 {
@@ -496,22 +504,24 @@ main {
   background: url(../img/plus-icon.png) no-repeat;
 }
 .plus {
-  left: 7px;
 }
 .minus, .minus-1 {
   width: 12px;
   height: 3px;
   background: url(../img/minus-icon.png) no-repeat;
-  top: 4px;
 }
 .minus {
-  left: -63px;
+  left: 149px;
+  top: 5px;
 }
 .minus-1 {
-  left: -90px;
+  top: 18px;
+  right: 82px;
+
 }
 .plus-1 {
-  left: -48px;
+  top: 14px;
+  right: 18px;
 }
 
 .popup-form {
@@ -735,12 +745,12 @@ h1, h2, h3, p {
 }
 
 .page-description_default {
-  font-size: 17px;
+  font-size: 12px;
   line-height: 26px;
   color: #333333;
   font-weight: lighter;
   position: relative;
-  top: 43px;
+  top: 45px;
   width: 100%;
 }
 
@@ -852,7 +862,7 @@ h1, h2, h3, p {
   height: 2px;
   background-color: #ffffff;
   position: relative;
-  left: 212px;
+  left: 217px;
   top: -10px;
 }
 .feature-line_special__left {
@@ -861,8 +871,8 @@ h1, h2, h3, p {
   height: 2px;
   background-color: #000;
   position: relative;
-  top: 53px;
-  left: 102px;
+  top: 54px;
+  left: 98px;
 }
 .feature-line_special__right {
   display: block;
@@ -870,8 +880,8 @@ h1, h2, h3, p {
   height: 2px;
   background-color: #000;
   position: relative;
-  top: 35px;
-  left: 148px;
+  top: 36px;
+  left: 150px;
   margin-bottom: 45px;
 }
 .feature-line_number {
